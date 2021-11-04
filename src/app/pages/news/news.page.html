@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref="/"
+      text="volver"
+      color="medium"
+      mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-avatar>
+         <ion-img src="/assets/coronaviruu.png" routerLink="/index"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card class="noticias">
+  <ion-card-title class="ion-padding">Guantes y su impacto</ion-card-title>
+  <ion-card-subtitle class="ion-padding subtitulo1">Expertos advierten del daño ambiental que generan guantes y mascarillas</ion-card-subtitle>
+  <ion-card-content>
+    Académicos de la Universidad de Talca indican que el 99,9% de los materiales con que se fabrican los Elementos de Protección Personal (EPP) para enfrentar el Coronavirus no son biodegradables.
+  </ion-card-content>
+  <a href="https://radio.uchile.cl/2020/07/02/expertos-advierten-del-dano-ambiental-que-generan-guantes-y-mascarillas/" target="_blank">
+    <ion-img src="assets/guante.jpg"></ion-img>
+  </a>
+  <ion-card-content class="ion-padding content1">
+    A raíz del COVID-19, como nunca en la historia, se han fabricado miles de millones de Elementos de Protección Personal (EPP) como mascarillas, lentes, pantallas acrílicas, guantes, entre otros, con el objetivo de contener la pandemia. Si bien estos permiten a las personas prevenir contagios, expertos de la Universidad de Talca advierten el peligro ambiental y de salud que generan actualmente y en el futuro. <br> <br>
+
+    Diógenes Hernández Espinoza, investigador del Instituto de Química de Recursos Naturales de la Universidad de Talca, señala que “el 99,9% de los materiales que se ocupan en la elaboración de estos EPP contra el COVID-19 son compuestos polímeros de origen artificial, por lo que no son biodegradables”. <br><br>
+
+    Cabe mencionar que los polímeros son estructuras químicas que se construyen de manera natural o artificial y dependiendo de su elasticidad, y  se clasifican en elastómeros, plásticos y fibras.<br><br>
+    <ion-button color="success" fill="outline" slot="end" href="https://radio.uchile.cl/2020/07/02/expertos-advierten-del-dano-ambiental-que-generan-guantes-y-mascarillas/" target="_blank"> 
+      Ver más
+    </ion-button>
+  </ion-card-content>
+  </ion-card>
+
+<ion-card class="noticias">
+  <ion-card-title class="ion-padding">Bota Responsable</ion-card-title>
+  <ion-card-subtitle class="ion-padding subtitulo1" style="justify-content: center;">Ministerio del Medio Ambiente llama a botar de forma responsable las mascarillas desechables</ion-card-subtitle>
+  <a href="https://mma.gob.cl/ministerio-del-medio-ambiente-llama-a-botar-de-forma-responsable-las-mascarillas-desechables/" target="_blank">
+    <ion-img src="assets/bota.jpg"></ion-img>
+  </a>
+  <ion-card-content class="ion-padding content1">
+    Bota Responsable es la nueva campaña del Ministerio del Medio Ambiente que busca reducir la contaminación generada por el mal manejo de la “basura covid-19”, haciendo un llamado a la ciudadanía a redoblar los cuidados sobre el manejo de mascarillas o guantes desechables.
+    <br>
+    <ion-button color="success" fill="outline" slot="end" href="https://mma.gob.cl/ministerio-del-medio-ambiente-llama-a-botar-de-forma-responsable-las-mascarillas-desechables/" target="_blank"> 
+      Ver más
+    </ion-button>
+  </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

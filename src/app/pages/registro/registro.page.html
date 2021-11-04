@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref="/"
+      text="volver"
+      color="medium"
+      mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-avatar>
+         <ion-img src="/assets/coronaviruu.png" routerLink="/index"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>Sección Comentarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<br>
+  <ion-img src="/assets/sato.jpg"></ion-img>
+  
+  <form #formulario="ngForm" (ngSubmit) ="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre: </ion-label>
+      <ion-input autofocus="true" autocapitalize type="text" placeholder="Ingrese su nombre"
+                 name="nombre" [(ngModel)]= "newDato.nom"
+                 required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Edad: </ion-label>
+      <ion-input type="number" placeholder="Ingrese su edad"
+                 name="edad" [(ngModel)]= "newDato.edad"
+                 required>
+      </ion-input>
+    </ion-item>
+  
+
+    <ion-item>
+      <ion-label position="floating">Email: </ion-label>
+      <ion-input type="email" placeholder="Email"
+                 name="email" [(ngModel)]= "newDato.email"
+                 pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                 required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Comentario: </ion-label>
+      <ion-textarea rows="6" cols="20" type="text-area" placeholder="Ingrese su comentario: "
+                 name="comentario" [(ngModel)]= "newDato.come"
+                 required>
+      </ion-textarea>
+    </ion-item>
+
+    <ion-button [disabled] ="formulario.invalid"
+      type="submit" expand="block" routerLink="/index" (click)="addDatos()" color="medium" shape="round">
+        Enviar Comentario
+    </ion-button>
+
+    <ion-button expand="block" routerLink="/comentarios" color="medium" shape="round">
+        Ver comentarios
+    </ion-button>
+
+  </form>
+   
+</ion-content>
+

@@ -1,0 +1,41 @@
+<ion-header class="ion-padding">
+  <ion-toolbar>
+    <ion-title>Inicie Sesión</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+         <ion-img src="/assets/coronaviruu.png"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="ion-padding title">
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button expand="block" (click)="ingresar()" color="dark">
+        Ingresar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/regis']">Cree una cuenta ahora</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

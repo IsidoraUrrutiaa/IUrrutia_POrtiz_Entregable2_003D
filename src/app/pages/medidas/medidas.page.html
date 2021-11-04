@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+      defaultHref="/"
+      text="volver"
+      color="medium"
+      mode="ios"></ion-back-button>
+    </ion-buttons>  
+    <ion-buttons slot="end">
+      <ion-avatar>
+         <ion-img src="/assets/coronaviruu.png" routerLink="/index"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>Medidas sanitarias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="medidas">
+    <ion-card-content>
+      Para evitar la propagación de la COVID‑19, sigue estas recomendaciones:
+      <br>
+      <br>
+      -Mantén una distancia de seguridad con otras personas, aunque no parezca que estén enfermas.
+      <br>
+      <br>
+      <ion-img src="assets/distancia.png"></ion-img>
+      <br>
+      -Utiliza mascarilla en público, especialmente en interiores o cuando no sea posible mantener el distanciamiento físico.
+      <br>
+      <br>
+      <ion-img src="assets/mask.png"></ion-img>
+      <br>
+      -Prioriza los espacios abiertos y con buena ventilación en lugar de los espacios cerrados. Si estás en interiores, abre una ventana.
+      <br>
+      <br>
+      <ion-img src="assets/espacio.jpg"></ion-img>
+      <br>
+      -Lávate las manos con frecuencia. Usa agua y jabón o un desinfectante de manos a base de alcohol.
+      <br>
+      <br>
+      <ion-img src="assets/manos.jpg"></ion-img>
+      <br>
+      -Vacúnate cuando sea tu turno. Sigue las directrices sobre vacunación de las autoridades locales.
+      <br>
+      <br>
+      <ion-img src="assets/vacuna.jpg"></ion-img>
+      <br>
+      -Cuando tosas o estornudes, cúbrete la nariz y la boca con el codo flexionado o con un pañuelo.
+      <br>
+      <br>
+      <ion-img src="assets/tos.jpg"></ion-img>
+      <br>
+      -Si no te encuentras bien, quédate en casa.
+      <br>
+      <br>
+      <ion-img src="assets/casa.jpg"></ion-img>
+
+    </ion-card-content>
+    </ion-card>
+  
+
+
+
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="dark">
+        <ion-icon name="share"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+        <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+        <ion-fab-button href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="start">
+        <ion-fab-button href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaultHref="/"
+      color="medium"
+      text="volver"
+      mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-avatar>
+         <ion-img src="/assets/coronaviruu.png" routerLink="/index"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+    <ion-title>Conócenos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+<ion-card-title class="ion-padding ion-tittle">Conócenos</ion-card-title>
+
+<ion-card-content class="ion-padding content1 ion-news">
+  <ion-img src="assets/m&m.jpeg"></ion-img>
+  <br>
+  Somos un grupo de noticias encargado de informar a la gente acerca de las medidas del Covid-19 tanto a nivel pandemia, 
+  como a nivel ambiental. No debemos descuidar el cuidado de nuestro planeta a pesar de vivir una epidemia, el excesivo 
+  consumo de plástico en el ambiente ha generado un desmedido total en la basura producida para y por nosotros, siendo 
+  así contraproducente el que, a la vez que nosotros nos cuidamos, ensuciamos y contaminamos el planeta el cual habitamos. 
+  Es por esto que hemos decidido crear esta app, para informar a la gente y que esté al pendiente de todas las noticias 
+  relacionadas, generando más conciencia.
+  </ion-card-content>
+<ion-item  href="http://www.youtube.com" target="_blank">
+  <ion-icon slot="start" name="logo-youtube"></ion-icon>
+  <ion-label class="youtube">Youtube </ion-label>
+</ion-item>
+
+<ion-item href="http://www.facebook.com" target="_blank">
+  <ion-icon slot="start" name="logo-facebook"></ion-icon>
+  <ion-label class="facebook">Facebook</ion-label>
+</ion-item>
+
+<ion-item href="http://www.instagram.com" target="_blank">
+  <ion-icon slot="start" name="logo-instagram"></ion-icon>
+  <ion-label class="instagram">Instagram</ion-label>
+</ion-item>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</ion-card>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="dark">
+    <ion-icon name="share"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    <ion-fab-button href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+  </ion-fab-list>
+  <ion-fab-list side="start">
+    <ion-fab-button href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+</ion-content>

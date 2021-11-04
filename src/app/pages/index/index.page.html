@@ -1,0 +1,50 @@
+<ion-header class="ion-padding">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="medium">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Covid-19</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+         <ion-img src="/assets/coronaviruu.png" routerLink="/Index"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img src="assets/sintomas.png"></ion-img>
+  <br>
+  <br>
+  <ion-button expand="block" color="light"routerLink="/registro">Ingrese un comentario</ion-button>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" color="dark" slot="fixed" >
+    <ion-fab-button color="medium" routerLink="login">
+      <ion-icon name="ellipsis-vertical" color=""></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button routerLink="/login"><ion-icon name="power"></ion-icon></ion-fab-button>
+      <ion-fab-button routerLink="/regis"><ion-icon name="person-add"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
